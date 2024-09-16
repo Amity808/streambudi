@@ -11,7 +11,7 @@
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
-
+import Footer from "./Footer";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +23,7 @@ export default function RootLayout({
         className={``}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
