@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 text-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a href='/quiz'>Quiz</a></li>
+        <li><Link href='/quiz'>Quiz</Link></li>
         <li>
           <a>Earn</a>
           <ul className="p-2 text-white">
@@ -40,7 +40,7 @@ const Header = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a href='/quiz'>Quiz</a></li>
+      <li><Link href='/quiz'>Quiz</Link></li>
       <li>
         <details>
           <summary>Earn</summary>
