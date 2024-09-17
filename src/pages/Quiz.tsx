@@ -1,13 +1,17 @@
 import React from 'react'
+import Quiz from '@/components/Quiz_components/Quiz'
 
 
 
-const Quiz = () => {
+const QuizPage = () => {
   return (
     <div>
-        QUiz
+        <div className=' flex justify-center items-center'>
+
+        <Quiz />
+        </div>
     </div>
   )
 }
 
-export default Quiz
+export default QuizPage

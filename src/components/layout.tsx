@@ -12,6 +12,7 @@
 //   weight: "100 900",
 // });
 import Footer from "./Footer";
+import Navbar from "./Navbar"
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={``}
       >
+        <Navbar />
         {children}
         <Footer />
       </body>
