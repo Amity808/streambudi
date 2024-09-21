@@ -11,11 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'dark': "#1C2936",
+        'light-green': "#73DCA5",
+        'clear-green': '#91E39B',
+        'dust': "#FDEFD7"
       },
     },
   },
   plugins: [
-      require('daisyui'),
+    require('daisyui'),
   ],
 };
 export default config;

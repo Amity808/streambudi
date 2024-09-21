@@ -4,17 +4,18 @@ import "../globals.css";
 import RootLayout from "@/components/layout";
 
 
-//   const projectId = process.env.NEXT_PUBLIC_WC_PROJECT_ID as string; // get one at https://cloud.walletconnect.com/app
-
+import { StrictMode } from 'react';
+import AppWalletProvider from "@/utils/walletAdapter/AppWalletProvider";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <RootLayout>
+    <StrictMode>
+      <AppWalletProvider>
         <Component {...pageProps} />
-      </RootLayout>
-    </>
+      </AppWalletProvider>
+    </StrictMode>
   );
 }
 
 export default App;
+

@@ -7,7 +7,7 @@ import Features from '@/components/Features'
 
 const Home = () => {
   return (
-    <div className=' bg-white h-full'>
+    <div className='h-full'>
       <div>
         <Navbar />
         <Header />
