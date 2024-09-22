@@ -6,8 +6,8 @@ import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 const Header = () => {
   return (
 
-    <div className="navbar px-10  text-dust">
-      <div className="navbar-start">
+    <div className="navbar px-10 items-center justify-center bg-dark/50 backdrop-blur-md fixed z-50 text-dust">
+      <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -43,21 +43,13 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="text-dust font-bold text-xl">Streambudi</a>
+        <a className="text-dust font-bold text-[18px]">Streambudi</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal text-[18px] px-1">
           <li><Link href='/quiz'>Quiz</Link></li>
-          <li>
-            <details>
-              <summary>Earn</summary>
-              <ul className="p-2 text-white">
-                <li><a>Payment</a></li>
-                <li><a>Stream</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>Vote</a></li>
+          <li><Link href='/quiz'>About us</Link></li>
+          <li><Link href='/quiz'>Docs</Link></li>
         </ul>
       </div>
       <div className="navbar-end">

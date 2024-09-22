@@ -1,12 +1,33 @@
+import Image from 'next/image'
 import React from 'react'
 
+
+const feature = [
+
+    {
+        title: "Live Auctions",
+        subtitle: "Monetize your content with secure, blockchain - powered auctions"
+    },
+
+
+    { title: "Interactive Quizzes", subtitle: "Boost engagement with real - time quizzes and polls" },
+
+
+    { title: "Seamless Giveaways", subtitle: "Run exciting giveaways to grow your audience" },
+]
 
 
 const Features = () => {
     return (
-        <div className=' features h-[700px]'>
+        <div className='h-screen py-10 relative'>
+            <div className='left-0 h-screen w-screen absolute top-0'>
+                <div className='h-screen w-screen z-10 bg-gradient-to-b from-dark to-dark/50 absolute top-0'>
 
-            <div className='  font-medium'>
+                </div>
+                <Image src={'/landing/stream.png'} alt='stream collage' fill={true} />
+            </div>
+            <div className='w-10/12 m-auto z-50 text-dust'>
+
                 <div className=' text-xl font-normal text-white flex flex-row lg:flex-row max-lg:flex-row md:flex-row max-md:flex-row sm:flex-col max-sm:flex-col py-8 justify-evenly'>
                     <p className=' mx-9 font-light text-xl'>We get you engage your audience while you monitize your content, and earn on quizes.</p>
                     <span className='font-light text-xl items-center px-7'>
@@ -40,6 +61,8 @@ const Features = () => {
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     )

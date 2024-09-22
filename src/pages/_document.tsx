@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className='bg-dark text-dust'>
+      <body className='bg-[url("/grid_bg.png")]   text-dust'>
         <Main />
         <NextScript />
       </body>
