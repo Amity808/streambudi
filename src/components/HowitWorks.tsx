@@ -3,6 +3,8 @@ import { title } from 'process'
 import React from 'react'
 
 
+
+
 const feature = [
     {
         title: "Connect StreamBudi to your favorite streaming platform",
