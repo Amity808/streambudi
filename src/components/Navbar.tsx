@@ -45,7 +45,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="text-dust font-bold text-xl">Streambudi</a>
+        <a className="text-dust font-bold text-xl"><Link href={"/"}>Streambudi</Link></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
