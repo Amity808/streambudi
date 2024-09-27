@@ -16,7 +16,7 @@ const ManageApi = () => {
         <div className=" mt-3">
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Api key name for app"
             className="input input-bordered w-full max-w-xs"
           />
         </div>
