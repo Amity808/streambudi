@@ -38,12 +38,11 @@ const HowitWorks = () => {
 
                         return (
                             <div key={index + item.title} className='border border-light-green rounded-xl p-3' >
-                                <div className='w-full h-[300px] overflow-hidden'>
+                                <div className='w-full overflow-hidden'>
                                     <Image src={item.image} alt={item.title} width={400} height={400} />
 
                                 </div>
-
-                                <p className='text-[40px]'>{item.title}</p>
+                                <p className='text-[18px] p-2 text-center'>{item.title}</p>
                             </div>
                         )
                     })}
